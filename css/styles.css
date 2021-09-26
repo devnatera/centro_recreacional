@@ -133,8 +133,8 @@ section {
 #header .container {
 	background: url(../images/body-bg1.png) repeat 0 0;
 	height: 100vh;
-	width: 100% !important;
-	padding: 0px;	
+	min-width: 100%;
+	padding: 0px;
 	z-index: 998;
 }
 
@@ -243,15 +243,15 @@ section {
 #footer p {
 	margin: 0px 0px -5px;
 }
-/*
-#footer .social {
-	float: right;
-}
-*/
+
+
 #footer .img-container {
 	text-align: center;
+	line-height: 20px;
 	width: 30px;
 	height: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
 #footer .facebook{
@@ -276,18 +276,6 @@ section {
 	max-height: 20px;
 	width: 20px;
 	filter: invert(100%);
-}
-
-#footer #facebook{
-	color: #3b5998;
-}
-
-#footer #instagram{
-	color:  #F77737;
-}
-
-#footer #twitter{
-	color: #00acee ;
 }
 
 /* Media Query's */
