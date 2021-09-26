@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Centro Recreacional</title>
+
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,100italic,400,300italic' rel='stylesheet'
+		type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/loader.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="loader-wrapper">
+		<div id="loader">
+			<div class="sk-spinner sk-spinner-cube-grid">
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+			</div>
+		</div>
+	</div>
+
+	<section id="header">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-8">
+					<img class="logo" src="images/centro-recreacional.png" />
+					<h1 class="white-text"><b>Ven a divertirte</b></h1>
+					<h4 class="white-text">Disfruta la comodidad de nuestras instalaciones</h4>
+					<div id="countdown" class="white-text"></div>
+				</div>
+			</div>
+		</div>
+		<div class="animation">
+			<a class="arrow-down-animation" data-scroll href="#about">
+				<div class="img-container"><img src="./images/svg/down.svg" alt="Down" /></div>
+			</a>
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<h2><b>Nuestro Espacio</b></h2>
+			<div class="row text-center">
+				<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
+					<div class="img-container"><img src="./images/svg/swim.svg" alt="Piscina" /></div>
+					<h3>Piscina</h3>
+					<div class="colored-line-small-center"></div>
+					<p>Disfruta al maximo de nuestras piscinas.</p>
+				</div>
+				<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="col-md-4 middle">
+					<div class="img-container"><img src="./images/svg/cutlery.svg" alt="Restaurante" /></div>
+					<h3>Restaurante</h3>
+					<div class="colored-line-small-center"></div>
+					<p>Deleita tu paladar con nuestros platos exquisitos.</p>
+				</div>
+				<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
+					<div class="img-container"><img src="./images/svg/bicycle.svg" alt="Bicicleta" /></div>
+					<h3>Cicloruta</h3>
+					<div class="colored-line-small-center"></div>
+					<p>Contamos con una clicloruta debidamente señalizada.</p>
+				</div>
+			</div>
+
+			<div class="row text-center">
+				<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
+					<div class="img-container"><img src="./images/svg/park.svg" alt="Cancha de Futbol" /></div>
+					<h3>Parqueadero</h3>
+					<div class="colored-line-small-center"></div>
+					<p>Contamos con parqueadero exclusivo para nuestros clientes.</p>
+				</div>
+				<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="col-md-4 middle">
+					<div class="img-container"><img src="./images/svg/soccer.svg" alt="Piscina" /></div>
+					<h3>Cancha de Fútbol</h3>
+					<div class="colored-line-small-center"></div>
+					<p>Disfruta y practica deporte en nuestro escenario deportivo.</p>
+				</div>
+				<div data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="col-md-4">
+					<div class="img-container"><img src="./images/svg/home-green.svg" alt="Piscina" /></div>
+					<h3>Cabañas</h3>
+					<div class="colored-line-small-center"></div>
+					<p>Cabañas para 6, 8 y 10 personas (incluye kit de aseo).</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2 m-auto">
+
+					<form method="post" action="">
+						<p data-sr="enter top over 1s, wait 0.3s, move 24px, reset" class="contact-info text-center">
+							Contactanos, resolveremos todas sus dudas.</p>
+						<div data-sr="enter left over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-6">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Nombre" />
+						</div>
+						<div data-sr="enter right over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-6">
+							<input type="email" class="form-control" id="email" name="email"
+								placeholder="Correo Electronico" />
+						</div>
+						<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-12">
+							<input type="text" class="form-control" id="phone" name="phone" placeholder="Celular" />
+						</div>
+						<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="form-group col-md-12">
+							<textarea cols="60" rows="3" id="comment" name="comment" class="form-control"
+								placeholder="Escribenos ..."></textarea>
+						</div>
+						<div data-sr="enter bottom over 1s, wait 0.3s, move 24px, reset" class="form-group col-sm-12 ">
+							<button type="submit" class="button-leweb">Enviar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer" class="bg-light">
+		<div class="container">
+			<div class="row d-flex justify-content-between">
+				<div class="w-50 text-right">
+					<p>
+						&copy; 2020 | DESIGN BY <a href="http://www.visionappweb.com"><b>Vision App Web</b></a>
+					</p>
+				</div>
+				<div class="w-50 social d-flex justify-content-start">
+					<a href="#" class="ml-3">
+						<div class="img-container facebook m-auto"><img src="./images/svg/facebook.svg" alt="Facebook" /></div>
+					</a>
+					<a href="#" class="ml-3">
+						<div class="img-container instagram m-auto"><img src="./images/svg/instagram.svg" alt="Instagram" /></div>
+					</a>
+					<a href="#" class="ml-3">
+						<div class="img-container twitter m-auto"><img src="./images/svg/twitter.svg" alt="Twitter" /></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- SMOOTH SCROLL -->
+	<script src="js/smooth-scroll.min.js"></script>
+	<!-- PARALLAX  -->
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<!-- SCROLL  -->
+	<script src="js/scrollReveal.min.js"></script>
+	<!-- FUNCTIONS -->
+	<script src="js/functions.js"></script>
+
+</body>
+
+</html>

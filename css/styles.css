@@ -1,0 +1,368 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 28px;
+    text-align: center;
+    overflow-x: hidden !important;
+    margin: auto !important;
+}
+
+a, a:hover, a:active, a:focus {
+    border: 0 none;
+    outline: 0 none;
+    text-decoration: none;
+}
+
+/* Fuentes */
+
+h1,
+h2 {
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 62px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* Forms */
+
+.form-control {
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+	border-radius: 0px;
+    box-shadow: none;
+    height: 57px;
+    padding-left: 20px;
+}
+
+/* General */
+
+.white-text {
+	color: #fff;
+}
+
+.colored-line-small-center {
+	background: #008ed6;
+	display: block;
+	margin: auto;
+    height: 1px;
+    width: 25%;
+    z-index: 1;
+	margin-bottom: 5px;
+}
+
+.colored-line-right {
+	background: #008ed6;
+	display: block;
+	float: right;
+    height: 1px;
+    width: 165px;
+    z-index: 1;
+}
+
+.button-leweb {
+	background: none repeat scroll 0 0 rgba(22, 182, 234, 0.5);
+    border: 1px solid #fff;
+	color: #fff;
+	border-radius: 0px;
+    box-shadow: none;
+	height: 57px;
+	padding-left: 18px;
+	padding-right: 18px;
+	
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease; 
+}
+
+
+.button-leweb:hover {
+	background: #008ed6;
+}
+
+
+/* secciones */
+
+section {
+	width: 100vw;
+	min-height: 70vh;
+	margin-bottom: 5vh;
+}
+
+#header {
+	background: url('../images/Inflatable Swimming Pool.jpg') no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	padding: 0px;
+}
+
+#header .container {
+	background: url(../images/body-bg1.png) repeat 0 0;
+	height: 100vh;
+	width: 100% !important;
+	padding: 0px;	
+	z-index: 998;
+}
+
+#header .col-md-8 {
+	top: 20%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 999;
+}
+
+#header .logo {
+	margin-bottom: 25px;
+	max-width: 60vw;
+}
+
+#header .img-container {
+	text-align: center;
+	font-size: 48px;
+	color: #fff;
+	
+	-webkit-animation: leweb_fade_move_down 2s ease-in-out infinite;
+	-moz-animation: leweb_fade_move_down 2s ease-in-out infinite;
+	animation: leweb_fade_move_down 2s ease-in-out infinite;
+}
+
+#header .img-container img{
+	width: 48px;
+	filter: invert(100%);
+}
+	/* Animacion flecha hacia abajo */
+	
+@-webkit-keyframes leweb_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes leweb_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes leweb_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
+
+#about .container{
+	margin-top: 5vh;
+}
+
+#about .img-container {
+	color: #fff;
+	background: #0f9b39;
+	border-radius: 50%;
+	margin: auto;
+	line-height: 175px;
+	height: 175px;
+	width: 175px;
+}
+
+#about .img-container img{
+	height: 90px;
+	max-width: 120px;
+	filter: invert(100%);
+}
+
+.animation {
+	width: 100%;
+	bottom: 0;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 999;
+	text-align:center;
+	text-decoration: none;
+}
+
+
+#contact .button-leweb {
+	border: 1px solid #ccc;
+}
+
+#success {
+	display: none;
+}
+
+#success i {
+	color: #b8c000;
+	font-size: 28px;
+	display: block;
+}
+
+
+#footer {
+	border-top: 1px solid #ccc;
+	padding: 25px 0px;
+}
+
+#footer p {
+	margin: 0px 0px -5px;
+}
+/*
+#footer .social {
+	float: right;
+}
+*/
+#footer .img-container {
+	text-align: center;
+	width: 30px;
+	height: 30px;
+}
+
+#footer .facebook{
+	border-radius: 50%;
+	background: #3b5998;
+  	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+#footer .instagram{
+	border-radius: 50%;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+#footer .twitter{
+	border-radius: 50%;
+	background: #00acee;
+  	box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+} 
+
+#footer .img-container img{
+	max-height: 20px;
+	width: 20px;
+	filter: invert(100%);
+}
+
+#footer #facebook{
+	color: #3b5998;
+}
+
+#footer #instagram{
+	color:  #F77737;
+}
+
+#footer #twitter{
+	color: #00acee ;
+}
+
+/* Media Query's */
+@media (max-width: 456px) { 
+	
+	#mc_form .form-control {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	
+	.button-leweb {
+		width: 100%;
+	}
+	
+	#header .logo {
+		width: 200px;
+	}
+	
+	#header h1 {
+		display: none;
+	}
+
+}
+
+
+@media (max-width: 768px) { 
+
+	body {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	h1 {
+		font-size: 44px;
+		line-height: 58px;
+	}
+
+	h2 {
+		font-size: 24px;
+		line-height: 38px;
+	}
+
+	h3 {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	h4 {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	h5 {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	
+	.clocktitle{
+		font-size: 11px;
+	}
+
+	.numbers {
+		font-size: 44px;
+	}
+	
+	#header .col-md-8 {
+		top: 5%;
+	}
+}
+
+
+@media (max-width: 992px) {	
+	
+	#about .middle {
+		margin-top: 65px;
+		margin-bottom: 65px;
+	}
+}
+
